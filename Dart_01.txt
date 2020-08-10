@@ -1,0 +1,43 @@
+void main() {
+//   int age = 25; 
+//   print(age);
+//   String name = 'asmaa';
+//   name ='asmaa thabet';
+//   name =20; 
+//   bool isNight = false;
+//    print (isNight);
+//     print(name);
+  dynamic name ='salam';    // to be compatiable with all types declared 
+  name =30; 
+  print(name);
+  for (int i = 0; i < 5; i++) {
+//     print('hello');
+    print('hello ${i + 1}');
+  }
+  String greet = greeting();
+  int age = getAge();
+  print('${greet}' + ' ' + '${age}');
+  // lists
+//   List names = ['asmaa', 'ahmed' , 'mohammed'];
+//   print (names);
+//   names.add('eman');
+//   names.add(50);
+//   print (names);
+//   names.remove('ahmed'); 
+//   print (names);
+  
+//    List<String> namesList = ['a', 'b' , 'c'];
+//    print(namesList);
+//   namesList.add('50');
+//   print(namesList);
+}
+
+// String greeting(){
+//   return 'hello';
+// }
+String greeting() => 'hello';
+
+// int getAge(){
+//   return 30; 
+// }
+int getAge() => 30; 
