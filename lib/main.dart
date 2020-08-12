@@ -14,13 +14,18 @@ class Home extends StatelessWidget {
     centerTitle: true,
     backgroundColor: Colors.deepOrange[600],  // press ctrl + Q
     ),
-    body: Center(
-      child: IconButton(
-        onPressed: () {},
-        icon: Icon(Icons.alternate_email),
-        color: Colors.deepOrange,
-        iconSize: 50.0,
-      ),
+    body: Container(
+      padding: EdgeInsets.fromLTRB(10.0, 20.0 , 10.0, 40.0),
+      margin: EdgeInsets.all(30.0),
+      color: Colors.grey[400],
+      child: Text("hello"),
+//    Center(
+//      child: IconButton(
+//        onPressed: () {},
+//        icon: Icon(Icons.alternate_email),
+//        color: Colors.deepOrange,
+//        iconSize: 50.0,
+//      ),
 //        child: RaisedButton.icon(
 //          onPressed: () {} ,
 //          icon: Icon(
