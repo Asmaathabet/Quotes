@@ -15,11 +15,19 @@ class Home extends StatelessWidget {
     backgroundColor: Colors.deepOrange[600],  // press ctrl + Q
     ),
     body: Center(
-      child: Icon(
-        Icons.airplanemode_active,
-        color: Colors.deepOrange,
-        size: 50.0,
-      ),
+        child: RaisedButton.icon(
+          onPressed: () {} ,
+          icon: Icon(
+            Icons.mail
+          ),
+          label: Text('mail me '),
+          color: Colors.blue,
+        ),
+//      child: Icon(
+//        Icons.airplanemode_active,
+//        color: Colors.deepOrange,
+//        size: 50.0,
+//      ),
 //    child: Image.asset('assets/home.jpg'),
 //      child: Image.network('https://images.unsplash.com/photo-1597207553648-5a63b420c157?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=306&q=80'),
 //    Text(
