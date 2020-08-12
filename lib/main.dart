@@ -15,14 +15,20 @@ class Home extends StatelessWidget {
     backgroundColor: Colors.deepOrange[600],  // press ctrl + Q
     ),
     body: Center(
-        child: RaisedButton.icon(
-          onPressed: () {} ,
-          icon: Icon(
-            Icons.mail
-          ),
-          label: Text('mail me '),
-          color: Colors.blue,
-        ),
+      child: IconButton(
+        onPressed: () {},
+        icon: Icon(Icons.alternate_email),
+        color: Colors.deepOrange,
+        iconSize: 50.0,
+      ),
+//        child: RaisedButton.icon(
+//          onPressed: () {} ,
+//          icon: Icon(
+//            Icons.mail
+//          ),
+//          label: Text('mail me '),
+//          color: Colors.blue,
+//        ),
 //      child: Icon(
 //        Icons.airplanemode_active,
 //        color: Colors.deepOrange,
