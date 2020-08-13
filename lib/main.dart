@@ -14,11 +14,21 @@ class Home extends StatelessWidget {
     centerTitle: true,
     backgroundColor: Colors.deepOrange[600],  // press ctrl + Q
     ),
-    body: Container(
-      padding: EdgeInsets.fromLTRB(10.0, 20.0 , 10.0, 40.0),
-      margin: EdgeInsets.all(30.0),
-      color: Colors.grey[400],
-      child: Text("hello"),
+    body:Row(
+      children: <Widget>[
+        Text('hello world'),
+        FlatButton(
+          onPressed: (){},
+          color : Colors.deepOrange,
+          child: Text('click me'),
+        )
+      ],
+
+//    Container(
+//      padding: EdgeInsets.fromLTRB(10.0, 20.0 , 10.0, 40.0),
+//      margin: EdgeInsets.all(30.0),
+//      color: Colors.grey[400],
+//      child: Text("hello"),
 //    Center(
 //      child: IconButton(
 //        onPressed: () {},
