@@ -15,12 +15,19 @@ class Home extends StatelessWidget {
     backgroundColor: Colors.deepOrange[600],  // press ctrl + Q
     ),
     body:Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Text('hello world'),
         FlatButton(
           onPressed: (){},
           color : Colors.deepOrange,
           child: Text('click me'),
+        ),
+        Container(
+          padding: EdgeInsets.all(30),
+          color: Colors.blue,
+          child: Text('inside container'),
         )
       ],
 
