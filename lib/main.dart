@@ -25,9 +25,14 @@ class Home extends StatelessWidget {
           ],
         ),
         Container(
+        child: Padding(
+          padding: const EdgeInsets.all(100.0),
+        child: Container(
           padding: EdgeInsets.all(20.0) ,
           color: Colors.amber,
           child: Text('One'),
+        ),
+        ),
         ),
         Container(
           padding: EdgeInsets.all(30.0) ,
