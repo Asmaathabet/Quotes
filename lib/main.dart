@@ -14,22 +14,48 @@ class Home extends StatelessWidget {
     centerTitle: true,
     backgroundColor: Colors.deepOrange[600],  // press ctrl + Q
     ),
-    body:Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    body: Column(
+      mainAxisAlignment: MainAxisAlignment.end,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
-        Text('hello world'),
-        FlatButton(
-          onPressed: (){},
-          color : Colors.deepOrange,
-          child: Text('click me'),
+        Row(
+          children: <Widget>[
+            Text('Hello '),
+            Text('Happiness'),
+          ],
         ),
         Container(
-          padding: EdgeInsets.all(30),
+          padding: EdgeInsets.all(20.0) ,
+          color: Colors.amber,
+          child: Text('One'),
+        ),
+        Container(
+          padding: EdgeInsets.all(30.0) ,
           color: Colors.blue,
-          child: Text('inside container'),
-        )
+          child: Text('Two'),
+        ),
+        Container(
+          padding: EdgeInsets.all(40.0) ,
+          color: Colors.red,
+          child: Text('Three'),
+        ),
       ],
+//    Row(
+//      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//      crossAxisAlignment: CrossAxisAlignment.center,
+//      children: <Widget>[
+//        Text('hello world'),
+//        FlatButton(
+//          onPressed: (){},
+//          color : Colors.deepOrange,
+//          child: Text('click me'),
+//        ),
+//        Container(
+//          padding: EdgeInsets.all(30),
+//          color: Colors.blue,
+//          child: Text('inside container'),
+//        )
+//      ],
 
 //    Container(
 //      padding: EdgeInsets.fromLTRB(10.0, 20.0 , 10.0, 40.0),
