@@ -20,6 +20,16 @@ class myCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/home.jpg'),
+                radius: 40.0,
+              ),
+            ),
+            Divider(
+              height: 60.0,
+              color: Colors.grey[800],
+            ),
             Text(
               'NAME',
               style: TextStyle(
@@ -38,6 +48,41 @@ class myCard extends StatelessWidget {
               ),
             ),
             SizedBox(height: 30.0),
+            Text(
+              'CODEWARS LEVEL',
+              style: TextStyle(
+                color: Colors.grey,
+                letterSpacing: 2.0,
+              ),
+            ),
+            SizedBox(height: 10.0),
+            Text(
+              '5',
+              style: TextStyle(
+                color: Colors.amberAccent[200],
+                letterSpacing: 2.0,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 30.0),
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 10.0),
+                Text(
+                    'asmathabet2009@hotmail.com',
+                  style: TextStyle(
+                    color: Colors.grey[400],
+                    letterSpacing: 1.0,
+                    fontSize: 14.0,
+                  )
+                )
+              ],
+            )
           ],
         ),
       ),
