@@ -27,6 +27,7 @@ class myCard extends StatelessWidget {
                 letterSpacing: 2.0,
               ),
             ),
+            SizedBox(height: 10.0),
             Text(
               'Asmaa Thabet',
               style: TextStyle(
@@ -35,7 +36,8 @@ class myCard extends StatelessWidget {
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
               ),
-            )
+            ),
+            SizedBox(height: 30.0),
           ],
         ),
       ),
