@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'quote.dart';
 // property: widget
 void main() => runApp(MaterialApp (
  home: QuoteList() ,
@@ -11,10 +12,10 @@ class QuoteList extends StatefulWidget {
 }
 
 class _QuoteListState extends State<QuoteList> {
-  List<String> quotes = [
-    'Be yourself, and forget about others speech',
-    'I have nothing to speak about except my mercy',
-    'The truth is rarely pure and never simple',
+  List<Quote> quotes = [
+    Quote(text: 'Be yourself, and forget about others speech', author: 'Asmaa Thabet'),
+    Quote(text: 'I have nothing to speak about except my mercy',author: 'Moslam Ag'),
+    Quote(text: 'The truth is rarely pure and never simple',author: 'Salem ghazal'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class _QuoteListState extends State<QuoteList> {
         backgroundColor: Colors.redAccent,
       ),
       body: Column(
-        children: quotes.map((qoute) => Text(qoute)).toList(),
+        children: quotes.map((qoute) => Text('${qoute.text} - ${qoute.author} ')).toList(),
       ),
     );
   }
